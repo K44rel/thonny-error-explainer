@@ -1,0 +1,7 @@
+*.wav
+__pycache__
+*.pyc
+build
+dist
+thonny_error_explainer.egg-info
+venv
