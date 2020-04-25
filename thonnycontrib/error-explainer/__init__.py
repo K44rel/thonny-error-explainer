@@ -19,6 +19,9 @@ class ErrorExplainer(ProgramAnalyzer):
 
 
 def load_plugin():
+    for k, v in error_explainer.messages._messages.items():
+        error_explainer.messages.overwrite_message(k, v.replace("\n", " "))
+
     get_workbench().set_default("assistance.use_error_explainer", True)
     get_workbench().add_command(command_id="error-explainer",
                                 menu_name="tools",
