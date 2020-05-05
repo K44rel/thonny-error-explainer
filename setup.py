@@ -13,7 +13,7 @@ for line in open(os.path.join(setupdir, "requirements.txt"), encoding="UTF-8"):
 
 setuptools.setup(
     name="thonny-error-explainer",
-    version="0.7",
+    version="0.8",
     description="Thonny plugin for error-explainer",
     long_description=long_description,
     long_description_content_type="text/markdown",
