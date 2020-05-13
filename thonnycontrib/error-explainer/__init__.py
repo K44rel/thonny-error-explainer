@@ -13,7 +13,7 @@ class ErrorExplainer(ProgramAnalyzer):
         for error in found_errors:
             warnings.append({
                     "filename": main_file_path,
-                    "msg": error,
+                    "msg": "(error-explainer) " + error,
             })
         self.completion_handler(self, warnings)
 

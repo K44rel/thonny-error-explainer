@@ -1,2 +1,2 @@
 thonny>=3.2.1
-error-explainer>=0.13
+error-explainer>=0.14
